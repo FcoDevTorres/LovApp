@@ -1,6 +1,8 @@
-<h1>Bienvenido a {{title}}</h1>
-<ul>
-    @for (user of users; track user.id) {
+<app-nav></app-nav>
+<div style="margin-top: 5em;" class="container">
+    <ul>
+        @for (user of users; track user.id) {
         <li>{{user.id}}: {{user.username}}</li>
-    }
-</ul>
+        }
+    </ul>
+</div>
